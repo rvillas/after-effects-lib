@@ -5,9 +5,9 @@ Simplified library with easings to use with expressions in after effects.
 const lib = footage("lib.jsx").sourceData;
 fr = 1; //frame number
 
-r = lib.sequenceFrames(timeToFrames(), 0
+r = lib.sequenceFrames(timeToFrames(), 0,
 	[
-		[f1, function(){return lib.slide("easeInOutSine", timeToFrames() - f1, 0, 0, 100, 100, 1.1)}],
+		[fr, function(){return lib.slide("easeInOutSine", timeToFrames() - f1, 0, 0, 100, 100, 1.1)}],
 	]
 );
 
